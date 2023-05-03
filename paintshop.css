@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    font-family: 'RobotoBold';
+    font-size: medium;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 32px;
+}
+
+.button-grid{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 200px;
+}
+
+.button-grid button{
+
+    width: 45px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+button.disabled{
+    background-color: darkgray;
+    cursor: not-allowed;
+}
+
+#result{
+    text-align: center;
+    margin: 5px 0;
+}
+
+#delete-btn{
+    background-color: yellow;
+}
+
+#clear-btn{
+    background-color: red;
+}

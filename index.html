@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paintshop.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1>Calculator</h1>
+            <input type="text" id="result" value="0" readonly>
+            
+            <div class="button-grid">
+                <button onclick="numberInput(7)">7</button>
+                <button onclick="numberInput(8)">8</button>
+                <button onclick="numberInput(9)">9</button>
+                <button onclick="operandInput('*')">*</button>
+
+                <button onclick="numberInput(4)">4</button>
+                <button onclick="numberInput(5)">5</button>
+                <button onclick="numberInput(6)">6</button>
+                <button onclick="operandInput('-')">-</button>
+
+                <button onclick="numberInput(1)">1</button>
+                <button onclick="numberInput(2)">2</button>
+                <button onclick="numberInput(3)">3</button>
+                <button onclick="operandInput('+')">+</button>
+
+                <button onclick="operandInput('/')">/</button>
+                <button onclick="numberInput(0)">0</button>
+                <button id="decimal-btn" onclick="numberInput('.')">.</button>
+                <button onclick="calculate()">=</button>
+
+                <button id="delete-btn" onclick="backspace()">Del</button>
+                <button id="clear-btn" onclick="clearResult()">C</button>
+            </div>
+
+        </section>
+      </main>
+
+</body>
+</html>
