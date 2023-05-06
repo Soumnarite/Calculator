@@ -36,7 +36,7 @@ function operandInput(op) {
 			const currentValue = eval(result.value);
 
 			if (currentValue % 1 !== 0) {
-				result.value = currentValue.toFixed(2) + op;
+				result.value = currentValue.toFixed(4) + op;
 			}
 			else {
 				result.value = currentValue + op;
@@ -61,7 +61,7 @@ function calculate() {
 		const currentValue = eval(result.value);
 
 		if (currentValue % 1 !== 0) {
-			result.value = currentValue.toFixed(2);
+			result.value = currentValue.toFixed(4);
 		}
 		else {
 			result.value = currentValue;
