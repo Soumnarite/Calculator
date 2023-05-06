@@ -4,10 +4,12 @@ let isCalculating = false;
 
 function numberInput(num) {
 
+	if (result.value === "0" && num === "0"){return;}
+
 	if (result.value === "0") {
 		result.value = "";
 	}
-
+	
 	if (num === "." && result.value.includes(".")) {
 		document.getElementById("decimal-btn").classList.add("disabled");
 		return;
